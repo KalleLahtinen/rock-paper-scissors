@@ -88,12 +88,13 @@ function game() {
   
   for (let i = 0; i < rounds; i++) {
     let result = playRound();
+
     if (result === "player") {
-      playerPoints++
+      playerPoints++;
     } else if (result === "computer") {
-      computerPoints++
+      computerPoints++;
     } else {
-      console.log("Something else happened")
+      i--;
     }
   }
 
